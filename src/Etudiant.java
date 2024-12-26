@@ -23,6 +23,15 @@ public class Etudiant {
         }
     }
 
+    // une méthode pour calculer la moyenne des notes
+    float moyenne(){
+        float sum = 0;
+        for(int i = 0; i < tab_notes.length; i++){
+            sum += tab_notes[i];
+        }
+        return sum/tab_notes.length;
+    }
+
 
 
 }
