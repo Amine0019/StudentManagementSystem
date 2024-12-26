@@ -52,6 +52,19 @@ public class Etudiant {
         }
     }
 
+    //méthode pour l'affichage d'un étudiant
+    void afficher(){
+        System.out.println("Nom : "+nom);
+        System.out.println("Prenom : "+prenom);
+        System.out.println("Notes :");
+        for(int i = 0; i < tab_notes.length; i++){
+            System.out.println("Note "+(i+1)+" : ");
+        }
+        System.out.println();
+        System.out.println("Moyenne : "+moyenne());
+        System.out.println("Admis : "+(admis()?"true":"false"));
+    }
+
 
 
 
