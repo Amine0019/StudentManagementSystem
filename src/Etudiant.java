@@ -66,7 +66,7 @@ public class Etudiant {
         System.out.println("Prenom : "+prenom);
         System.out.println("Notes :");
         for(int i = 0; i < tab_notes.length; i++){
-            System.out.println("Note "+(i+1)+" : ");
+            System.out.println("Note " + (i + 1) + " : " + tab_notes[i]);
         }
         System.out.println();
         System.out.println("Moyenne : "+moyenne());
