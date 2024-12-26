@@ -37,7 +37,7 @@ public class Etudiant {
         return moyenne()>=10;
     }
 
-    /*
+
     // une méthode pour comparer deux étudiants
     int exaeQuo(Etudiant E){
         float moyenne1 = this.moyenne();
@@ -51,7 +51,7 @@ public class Etudiant {
             return 1;
         }
     }
-    */
+
 
 
 
