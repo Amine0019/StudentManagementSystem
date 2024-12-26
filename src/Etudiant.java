@@ -16,10 +16,18 @@ public class Etudiant {
         System.out.println("Veuillez saisir le nom de prenom de l'etudiant");
         prenom = sc.nextLine();
 
-        System.out.println("Veuillez saisir les 10 notes de l'etudiant");
-        for(int i = 0; i < tab_notes.length; i++){
-            System.out.println("Note "+(i+1)+" : ");
-            tab_notes[i] = sc.nextFloat();
+        System.out.println("Entrez les 10 notes de l'étudiant : ");
+        for (int i = 0; i < 10; i++) {
+            while (true) {
+                try {
+                    System.out.print("Note " + (i + 1) + ": ");
+                    String input = sc.nextLine(); // Lire l'entrée comme chaîne
+                    tab_notes[i] = Float.parseFloat(input.replace(',', '.')); // Remplacer la virgule par un point si nécessaire
+                    break; // Sortir de la boucle si la conversion est réussie
+                } catch (NumberFormatException e) {
+                    System.out.println("Veuillez entrer un nombre valide (utilisez un point pour les décimales).");
+                }
+            }
         }
     }
 
